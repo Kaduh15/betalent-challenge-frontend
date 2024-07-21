@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      lucide:
+        specifier: ^0.412.0
+        version: 0.412.0
     devDependencies:
       typescript:
         specifier: ^5.2.2
@@ -248,6 +252,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  lucide@0.412.0:
+    resolution: {integrity: sha512-L2MXdrSRHkFTr+h1XrSgIxAfBP0Pc/C7shKu/WJF5/po8gmgeONzDtwIpqLhGRP3KE743gzDEKod8VnWGFqcwg==}
+
   nanoid@3.3.7:
     resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -451,6 +458,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  lucide@0.412.0: {}
 
   nanoid@3.3.7: {}
 
