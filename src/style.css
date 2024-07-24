@@ -52,3 +52,14 @@ body {
 main {
   padding: 2rem;
 }
+
+/* Estilização do Header da página */
+
+header {
+  background-color: var(--color-white);
+  padding: 1.2rem 2rem;
+  text-align: start;
+
+  box-shadow: var(--shadow-md);
+}
+

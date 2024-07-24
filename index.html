@@ -22,33 +22,24 @@
     </div>
 
     <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Foto</th>
-            <th>Nome</th>
-            <th class="details-head">Cargo</th>
-            <th class="details-head">Data de Admissão</th>
-            <th class="details-head">Telefone</th>
-            <th class="details-head-icon"></th>
-          </tr>
+      <div class="table-header">
+            <p>Foto</p>
+            <p>Nome</p>
+            <p class="details-head-icon"></p>
+            <p class="details-head">Cargo</p>
+            <p class="details-head">Data de Admissão</p>
+            <p class="details-head">Telefone</p>
         </thead>
-        <tbody>
-          <tr class="row-grid">
-            <td class="table-row-photo photo-grid"><img src="https://picsum.photos/500/300?random=2"
-                alt="Foto de Giovana L. Arruda"></td>
-            <td class="name-grid">João</td>
-            <td data-head="Cargo" class="details-content details-0 job-grid">Back-end</td>
-            <td data-head="Data de Admissão" class="details-content details-0 date-grid">2019-12-02</td>
-            <td data-head="Telefone" class="details-content details-0 phone-grid">5551234567890</td>
-            <td class="details-content-icon toggle-icon-grid">
-              <button data-details="0" class="toggle-details">
-                <i data-lucide="chevron-down"></i>
-              </button>
-            </td>
-          </tr>
-          <!-- Adicione mais linhas conforme necessário -->
-        </tbody>
+        <div class="table-body">
+          <div class="table-row" >
+            <img src="https://picsum.photos/100/100" alt="imagem do funcionário">
+            <p>João da Silva</p>
+            <p class="details-icon"><i data-lucide="chevron-down"></i></p>
+            <p class="details">Desenvolvedor</p>
+            <p class="details">01/01/2021</p>
+            <p class="details">(11) 99999-9999</p>
+          </div>
+        </div>
       </table>
     </div>
   </main>
