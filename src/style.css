@@ -224,3 +224,8 @@ header {
   content: attr(data-head);
   font-weight: var(--font-weight-bold);
 }
+
+.details-icon {
+  background: none;
+  border: none;
+}
