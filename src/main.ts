@@ -1,5 +1,5 @@
 import './style.css'
-import { startIcons } from './lucideIcons'
+import { startIcons } from './libs/lucideIcons'
 import { createEmployeeRow } from './components/EmployeeRow'
 import { getEmployees } from './helpers/fetch'
 
