@@ -1,10 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-  font-family: "Roboto", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Reset e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Fonte principal e variáveis de cor */
+:root {
+  --font-family: "Roboto", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --line-height: 1.5;
+  
+  --color-primary: #594ED2;
+  --color-secondary: #5A84C0;
+  --color-dark: #1C1C1C;
+  --color-gray-20: #9E9E9E;
+  --color-gray-10: #DFDFDF;
+  --color-gray-00: #F0F0F0;
+  --color-white: #FFF;
+
+  --shadow-sm: 0px 1px 2px 0px #00000033;
+  --shadow-md: 0px 2px 4px 0px #00000033;
+
+  --bg-gradient: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Estrutura da página */
+html, body {
+  min-height: 100vh;
+  min-width: 50vw;
+  background-color: var(--color-gray-00);
+  color: var(--color-dark);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight-normal);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
