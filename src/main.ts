@@ -18,7 +18,7 @@ tableBody?.appendChild(createEmployeeRow({
 const buttonsActions = document.querySelectorAll<HTMLButtonElement>('.toggle-details');
 
 buttonsActions.forEach((button) => {
-  button.addEventListener('click', (event) => {
+  button.addEventListener('click', () => {
     const rowId = button.getAttribute('data-details');
     const details = document.querySelectorAll<HTMLTableCellElement>(`.details-${rowId}`);
 

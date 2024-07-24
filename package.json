@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:format": "eslint ./src/**/*.ts --fix"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "eslint": "^9.7.0",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
   },
