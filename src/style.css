@@ -179,12 +179,14 @@ header {
 
 .photo {
   grid-area: photo;
+  display: flex;
 }
 
-.photo {
+.photo > img {
   width: 4.8rem;
   height: 4.8rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .name {
@@ -228,4 +230,55 @@ header {
 .details-icon {
   background: none;
   border: none;
+}
+
+@media only screen and (min-width: 819px) {
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table-row > * {
+    width: 20%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .details-head,
+  .details {
+    display: flex;
+  }
+
+  .details::before {
+    content: '';
+  }
+
+  .details-head-icon, .details-icon {
+    display: none;
+  }
+
+  .photo {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .phone {
+    margin-bottom: 0;
+  }
+
+  .job {
+    padding-top: 0;
+  }
+
+
+  .table-header {
+    justify-content: space-between;
+  }
+
+  .table-header > * {
+    flex-grow: 1;
+    text-align: start;
+    width: 20%;
+  }
 }

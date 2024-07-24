@@ -8,7 +8,9 @@ export function createEmployeeRow(employee: Employee): HTMLDivElement {
   newTableRow.classList.add('table-row')
 
   newTableRow.innerHTML = `
-    <img class="photo" src="${image}" alt="imagem do funcionário">
+    <div class="photo">
+      <img class="img-row" src="${image}" alt="imagem do funcionário">
+    </div>
     <p class="name">${name}</p>
     <button class="details-icon icon"><i data-lucide="chevron-down"></i></button>
     <p data-head="Cargo" class="details job">${job}</p>
