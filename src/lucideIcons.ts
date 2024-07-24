@@ -1,9 +1,12 @@
 import { createIcons, ChevronDown, ChevronUp, Search } from 'lucide';
 
-createIcons({
-  icons: {
-    ChevronDown,
-    ChevronUp,
-    Search
-  }
-});
+
+export function startIcons() {
+  createIcons({
+    icons: {
+      ChevronDown,
+      ChevronUp,
+      Search
+    }
+  });
+}

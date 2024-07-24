@@ -1,3 +1,4 @@
-import './reset.css'
-import './style.css'
-import './lucideIcons'
+import './style.css';
+import { startIcons } from './lucideIcons';
+
+startIcons();
