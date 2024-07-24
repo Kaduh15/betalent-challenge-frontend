@@ -106,3 +106,37 @@ header {
   color: var(--color-gray-10);
 }
 
+/* Header da tabela */
+
+.table-container {
+  background-color: var(--color-white);
+
+  border-radius: 0.8rem;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: var(--bg-gradient);
+
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 1.875rem;
+  color: var(--color-white);
+
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.details-head-icon {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: var(--color-white);
+  border-radius: 50%;
+}
+
+.details-head, .details {
+  display: none;
+}
