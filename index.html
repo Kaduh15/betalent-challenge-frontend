@@ -5,60 +5,53 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Be.</title>
 </head>
 
-<body>
-  <header><img src="/logo.svg" alt="imagem da logo"></header>
+<body class="">
+  <header>
+    <img src="/logo.svg" alt="imagem da logo">
+  </header>
+  <main>
+    <div class="search">
+      <h1 class="heading-1">Funcionários</h1>
+      <div class="container-input">
+        <input type="text" placeholder="Pesquisar" id="search-input">
+        <div class="search-icon"><i data-lucide="search"></i></div>
+      </div>
+    </div>
 
-  <div>
-    <input type="text" placeholder="Pesquisar">
-    <i data-lucide="search"></i>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Foto</th>
-        <th>nome</th>
-        <th>⚪</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td><img src="https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
-            alt="imagem da logo" style="width:30px; height: 30px;"></td>
-        <td>Mario</td>
-        <td>
-          <i data-lucide="chevron-down"></i>
-        </td>
-      </tr><tr>
-        <td><img src="https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
-            alt="imagem da logo" style="width:30px; height: 30px;"></td>
-        <td>Mario</td>
-        <td>
-          <i data-lucide="chevron-down"></i>
-        </td>
-      </tr><tr>
-        <td><img src="https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
-            alt="imagem da logo" style="width:30px; height: 30px;"></td>
-        <td>Mario</td>
-        <td>
-          <i data-lucide="chevron-down"></i>
-        </td>
-      </tr><tr>
-        <td><img src="https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
-            alt="imagem da logo" style="width:30px; height: 30px;"></td>
-        <td>Mario</td>
-        <td>
-          <i data-lucide="chevron-down"></i>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th class="details-head">Cargo</th>
+            <th class="details-head">Data de Admissão</th>
+            <th class="details-head">Telefone</th>
+            <th class="details-head-icon"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-grid">
+            <td class="table-row-photo photo-grid"><img src="https://picsum.photos/500/300?random=2"
+                alt="Foto de Giovana L. Arruda"></td>
+            <td class="name-grid">João</td>
+            <td data-head="Cargo" class="details-content details-0 job-grid">Back-end</td>
+            <td data-head="Data de Admissão" class="details-content details-0 date-grid">2019-12-02</td>
+            <td data-head="Telefone" class="details-content details-0 phone-grid">5551234567890</td>
+            <td class="details-content-icon toggle-icon-grid">
+              <button data-details="0" class="toggle-details">
+                <i data-lucide="chevron-down"></i>
+              </button>
+            </td>
+          </tr>
+          <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+      </table>
+    </div>
+  </main>
 
   <script type="module" src="/src/main.ts"></script>
 </body>

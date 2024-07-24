@@ -14,7 +14,7 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --line-height: 1.5;
-  
+
   --color-primary: #594ED2;
   --color-secondary: #5A84C0;
   --color-dark: #1C1C1C;
@@ -34,7 +34,8 @@ html {
 }
 
 /* Estrutura da página */
-html, body {
+html,
+body {
   min-height: 100vh;
   min-width: 50vw;
   background-color: var(--color-gray-00);
@@ -46,4 +47,8 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding: 2rem;
 }
