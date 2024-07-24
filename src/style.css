@@ -127,6 +127,7 @@ header {
   color: var(--color-white);
 
   border-radius: 0.8rem 0.8rem 0 0;
+  box-shadow: var(--shadow-sm);
 }
 
 .details-head-icon {
@@ -137,6 +138,89 @@ header {
   border-radius: 50%;
 }
 
-.details-head, .details {
+.details-head,
+.details {
   display: none;
+}
+
+/* Estilização da tabela */
+
+.table-row {
+  display: grid;
+
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns:  auto auto auto;
+
+  align-items: center;
+
+  grid-template-areas:
+    'photo name icon'
+    'job job job'
+    'date date date'
+    'phone phone phone';
+
+  border-bottom: 0.2rem solid var(--color-gray-10);
+  padding: 1.2rem 1.6rem;
+
+  height: fit-content;
+  width: 100%;
+
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.table-row.active{
+  row-gap: 1.6rem;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.photo {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
+
+.name {
+  grid-area: name;
+}
+
+.job {
+  grid-area: job;
+  padding-top: 1.6rem;
+}
+
+.date {
+  grid-area: date;
+}
+
+.phone {
+  grid-area: phone;
+  margin-bottom: 1.6rem;
+}
+
+.icon {
+  grid-area: icon;
+  justify-self: self-end;
+}
+
+.icon > svg {
+  color: var(--color-primary);
+}
+
+.active > .details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.2rem dotted var(--color-gray-10);
+}
+
+.details::before {
+  content: attr(data-head);
+  font-weight: var(--font-weight-bold);
 }
