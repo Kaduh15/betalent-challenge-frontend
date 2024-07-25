@@ -15,6 +15,8 @@
 
 📊 A aplicação exibe uma tabela de funcionários com colunas de Foto, Nome, Cargo, Data de Admissão e Telefone. Possui uma funcionalidade de pesquisa para filtrar os dados e é totalmente responsiva, adaptando-se a diferentes tamanhos de tela.
 
+🌐 Você pode acessar a versão online da aplicação [aqui](https://betalent-challenge-frontend.vercel.app).
+
 ## Pré-requisitos
 
 🔧 Para rodar este projeto, você precisará ter instalado em sua máquina:
