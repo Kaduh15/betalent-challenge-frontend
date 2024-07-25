@@ -214,6 +214,8 @@ header {
 
 .icon > svg {
   color: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
 }
 
 .active > .details {
@@ -230,9 +232,24 @@ header {
 .details-icon {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 819px) {
+  .search {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container-input {
+    width: 40%;
+  }
+
+  main {
+    gap:3.2rem;
+    padding:3.2rem;
+  }
+
   .table-row {
     display: flex;
     justify-content: space-between;
